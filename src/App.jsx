@@ -6,6 +6,7 @@ import Hero from './components/Hero';
 import Stats from './components/Stats';
 import Products from './components/Products';
 import Steps from './components/Steps';
+import Pricing from './components/Pricing';
 
 function App() {
   const [cart, setCart] = useState([]);
@@ -24,6 +25,7 @@ function App() {
           setActiveTab={setActiveTab} 
         />
         <Steps />
+        <Pricing />
       </main>
       <ToastContainer />
     </div>

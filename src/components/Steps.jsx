@@ -1,37 +1,24 @@
 import React from 'react';
 
-const steps = [
-  {
-    id: '01',
-    title: 'Create Account',
-    description: 'Sign up for free in seconds. No credit card required to get started.',
-    icon: (
-      <svg className="h-8 w-8 text-violet-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-      </svg>
-    )
-  },
-  {
-    id: '02',
-    title: 'Choose Products',
-    description: 'Browse our catalog and select the tools that fit your needs.',
-    icon: (
-      <svg className="h-8 w-8 text-violet-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
-      </svg>
-    )
-  },
-  {
-    id: '03',
-    title: 'Start Creating',
-    description: 'Download and start using your premium tools immediately.',
-    icon: (
-      <svg className="h-8 w-8 text-violet-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-      </svg>
-    )
-  }
-];
+import stepsData from '../data/steps.json';
+
+const iconMap = {
+  '01': (
+    <svg className="h-8 w-8 text-violet-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+    </svg>
+  ),
+  '02': (
+    <svg className="h-8 w-8 text-violet-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+    </svg>
+  ),
+  '03': (
+    <svg className="h-8 w-8 text-violet-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+    </svg>
+  )
+};
 
 const Steps = () => {
   return (
@@ -49,7 +36,7 @@ const Steps = () => {
 
         {/* Steps Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {steps.map((step) => (
+          {stepsData.map((step) => (
             <div key={step.id} className="relative bg-white rounded-[2.5rem] border border-gray-100 p-10 flex flex-col items-center text-center hover:shadow-2xl hover:shadow-violet-100 transition-all duration-500 group">
               {/* Step Number Badge */}
               <div className="absolute top-6 right-6 h-8 w-8 bg-[#7F56D9] text-white text-xs font-bold rounded-full flex items-center justify-center shadow-lg shadow-violet-200">
@@ -59,7 +46,7 @@ const Steps = () => {
               {/* Icon Container */}
               <div className="mb-8 relative transition-transform duration-500 group-hover:scale-110">
                 <div className="h-24 w-24 rounded-full bg-violet-50 flex items-center justify-center">
-                  {step.icon}
+                  {iconMap[step.id]}
                 </div>
                 {/* Decorative pulse effect */}
                 <div className="absolute inset-0 rounded-full bg-violet-200/20 animate-ping -z-10 group-hover:animate-none" />
