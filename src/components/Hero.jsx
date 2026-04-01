@@ -9,8 +9,8 @@ const Hero = () => {
         {/* Badge */}
         <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#EBE7FE] text-[#6938EF] rounded-full text-sm font-semibold tracking-wide">
           <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="12" cy="12" r="6" fill="currentColor"/>
-            <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2" strokeOpacity="0.3"/>
+            <circle cx="12" cy="12" r="6" fill="currentColor" />
+            <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2" strokeOpacity="0.3" />
           </svg>
           New AI-Powered Tools Available
         </div>
@@ -30,13 +30,15 @@ const Hero = () => {
 
         {/* Actions */}
         <div className="flex flex-wrap items-center gap-4 pt-2">
-          <button className="px-8 py-3.5 bg-[#7F56D9] text-white font-semibold rounded-full hover:bg-violet-700 hover:shadow-lg hover:shadow-violet-200 transition-all text-base group">
+          <button
+            onClick={() => document.getElementById('products')?.scrollIntoView({ behavior: 'smooth' })}
+            className="px-8 py-3.5 bg-[#7F56D9] text-white font-semibold rounded-full hover:bg-violet-700 hover:shadow-lg hover:shadow-violet-200 transition-all text-base group">
             Explore Products
             <span className="ml-2 group-hover:translate-x-1 transition-transform inline-block">→</span>
           </button>
           <button className="px-8 py-3.5 bg-white text-[#7F56D9] font-semibold rounded-full border border-[#D6BBFB] hover:border-violet-600 hover:bg-violet-50 transition-all flex items-center gap-2 text-base shadow-sm">
             <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M5 3L19 12L5 21V3Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              <path d="M5 3L19 12L5 21V3Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
             Watch Demo
           </button>
@@ -46,9 +48,9 @@ const Hero = () => {
       {/* Right Content - Banner Image */}
       <div className="flex-1 relative w-full flex justify-end">
         <div className="relative rounded-[2rem] overflow-hidden shadow-2xl">
-          <img 
-            src={banner} 
-            alt="Digital Workflow Visualization" 
+          <img
+            src={banner}
+            alt="Digital Workflow Visualization"
             className="w-full max-w-[600px] h-auto object-cover"
           />
         </div>
