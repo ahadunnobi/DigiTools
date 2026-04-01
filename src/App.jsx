@@ -8,14 +8,20 @@ import Products from './components/Products';
 
 function App() {
   const [cart, setCart] = useState([]);
+  const [activeTab, setActiveTab] = useState('products');
 
   return (
     <div className="min-h-screen bg-white font-sans">
-      <Navbar cartCount={cart.length} />
+      <Navbar cartCount={cart.length} setActiveTab={setActiveTab} />
       <main>
         <Hero />
         <Stats />
-        <Products cart={cart} setCart={setCart} />
+        <Products 
+          cart={cart} 
+          setCart={setCart} 
+          activeTab={activeTab} 
+          setActiveTab={setActiveTab} 
+        />
       </main>
       <ToastContainer />
     </div>

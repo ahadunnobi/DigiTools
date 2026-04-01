@@ -3,8 +3,7 @@ import { toast } from 'react-toastify';
 import productsData from '../data/products.json';
 import ProductCard from './ProductCard';
 
-const Products = ({ cart, setCart }) => {
-  const [activeTab, setActiveTab] = useState('products');
+const Products = ({ cart, setCart, activeTab, setActiveTab }) => {
 
   const handleAddToCart = (product) => {
     if (cart.some(item => item.id === product.id)) {
