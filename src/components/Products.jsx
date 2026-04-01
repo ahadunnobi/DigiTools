@@ -7,6 +7,13 @@ const Products = ({ cart, setCart }) => {
   const [activeTab, setActiveTab] = useState('products');
 
   const handleAddToCart = (product) => {
+    if (cart.some(item => item.id === product.id)) {
+      toast.warn("This item is already in your cart!", {
+        position: "top-right",
+        autoClose: 2000,
+      });
+      return;
+    }
     setCart([...cart, product]);
     toast.success(`${product.name} added to cart!`, {
       position: "top-right",

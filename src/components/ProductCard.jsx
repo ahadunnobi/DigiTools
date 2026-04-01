@@ -63,11 +63,13 @@ const ProductCard = ({ product, onAddToCart, isInCart }) => {
 
       {/* Buy Now Button */}
       <button 
-        onClick={() => !isInCart && onAddToCart(product)}
-        disabled={isInCart}
+        onClick={(e) => {
+          e.preventDefault();
+          onAddToCart(product);
+        }}
         className={`w-full py-4 font-bold rounded-2xl transition-all text-base shadow-sm ${
           isInCart 
-          ? "bg-violet-100 text-violet-600 cursor-default" 
+          ? "bg-violet-100 text-violet-600 hover:bg-violet-200" 
           : "bg-[#7F56D9] text-white hover:bg-violet-700 hover:shadow-xl hover:shadow-violet-200 active:scale-[0.97]"
         }`}
       >
