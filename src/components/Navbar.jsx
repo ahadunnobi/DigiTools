@@ -27,7 +27,7 @@ export default function Navbar({ cartCount = 0, setActiveTab }) {
         </a>
 
 
-        <nav className="hidden md:flex items-center gap-8">
+        <nav className="hidden lg:flex items-center gap-8">
           {navLinks.map((link) => (
             <a
               key={link}
@@ -39,7 +39,7 @@ export default function Navbar({ cartCount = 0, setActiveTab }) {
           ))}
         </nav>
 
-        <div className="hidden md:flex items-center gap-4">
+        <div className="hidden lg:flex items-center gap-4">
           <button 
             id="nav-cart-btn" 
             onClick={() => {
@@ -67,7 +67,7 @@ export default function Navbar({ cartCount = 0, setActiveTab }) {
 
         <button
           id="nav-hamburger-btn"
-          className="md:hidden p-2 text-gray-600 hover:text-violet-600"
+          className="lg:hidden p-2 text-gray-600 hover:text-violet-600"
           onClick={() => setMenuOpen(!menuOpen)}
         >
           <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -79,7 +79,7 @@ export default function Navbar({ cartCount = 0, setActiveTab }) {
         </button>
       </div>
 
-      <div className={`md:hidden overflow-hidden transition-all duration-300 ${menuOpen ? 'max-h-96 border-t border-gray-100' : 'max-h-0'}`}>
+      <div className={`lg:hidden overflow-hidden transition-all duration-300 ${menuOpen ? 'max-h-96 border-t border-gray-100' : 'max-h-0'}`}>
         <div className="bg-white px-6 py-4 flex flex-col gap-4">
           {navLinks.map((link) => (
             <a

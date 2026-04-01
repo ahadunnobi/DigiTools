@@ -1,19 +1,15 @@
 import React from 'react';
-
+import SectionHeader from './SectionHeader';
 import pricingData from '../data/pricing.json';
 
 const Pricing = () => {
   return (
     <section id="pricing" className="py-16 bg-[#d9dde0]">
       <div className="max-w-7xl mx-auto px-6 w-full pt-10 pb-5">
-        <div className="text-center mb-8">
-          <h2 className="text-4xl md:text-5xl font-black text-[#101828] mb-3 tracking-tight">
-            Simple, Transparent Pricing
-          </h2>
-          <p className="text-[#475467] text-lg font-medium opacity-80 max-w-xl mx-auto leading-relaxed">
-            Choose the plan that fits your needs. Upgrade or downgrade anytime.
-          </p>
-        </div>
+        <SectionHeader 
+          title="Simple, Transparent Pricing"
+          subtitle="Choose the plan that fits your needs. Upgrade or downgrade anytime."
+        />
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
           {pricingData.map((plan) => (

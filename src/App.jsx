@@ -15,7 +15,7 @@ function App() {
   const [activeTab, setActiveTab] = useState('products');
 
   return (
-    <div className="min-h-screen bg-transparent font-sans">
+    <div className="min-h-screen bg-transparent font-sans overflow-x-hidden">
       <Navbar cartCount={cart.length} setActiveTab={setActiveTab} />
       <main>
         <Hero />
