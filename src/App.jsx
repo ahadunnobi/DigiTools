@@ -5,6 +5,7 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Stats from './components/Stats';
 import Products from './components/Products';
+import Steps from './components/Steps';
 
 function App() {
   const [cart, setCart] = useState([]);
@@ -22,6 +23,7 @@ function App() {
           activeTab={activeTab} 
           setActiveTab={setActiveTab} 
         />
+        <Steps />
       </main>
       <ToastContainer />
     </div>
