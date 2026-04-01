@@ -30,7 +30,7 @@ const StatItem = ({ endValue, label, isDecimal = false, suffix = "", trigger }) 
   }, [endValue, trigger]);
 
   return (
-    <div className="flex flex-col items-center justify-center py-12 px-6 group relative transition-all duration-500">
+    <div className="flex flex-col items-center justify-center py-8 px-6 group relative transition-all duration-500">
       <h3 className="text-6xl md:text-7xl font-black text-white mb-3 font-sans tracking-tight drop-shadow-sm group-hover:scale-105 transition-transform">
         {isDecimal ? count.toFixed(1) : Math.floor(count)}
         {suffix}
@@ -66,7 +66,7 @@ const Stats = () => {
   }, []);
 
   return (
-    <section ref={sectionRef} className="bg-violet-600 w-full overflow-hidden relative shadow-[inset_0_2px_15px_rgba(0,0,0,0.1)] py-4">
+    <section ref={sectionRef} className="bg-violet-600 w-full overflow-hidden relative shadow-[inset_0_2px_15px_rgba(0,0,0,0.1)] py-2 my-12 rounded-3xl max-w-[1280px] mx-auto">
       {/* Dynamic background accents */}
       <div className="absolute top-0 left-1/4 w-[500px] h-full bg-violet-500/20 blur-[120px] rounded-full pointer-events-none animate-pulse" />
       <div className="absolute top-0 right-1/4 w-[500px] h-full bg-indigo-500/10 blur-[100px] rounded-full pointer-events-none" />
