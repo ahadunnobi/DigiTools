@@ -44,7 +44,7 @@ export default function Navbar() {
             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8} d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13l-1.4 6h12.8M7 13L5.4 5M17 21a1 1 0 100-2 1 1 0 000 2zm-8 0a1 1 0 100-2 1 1 0 000 2z"/>
             </svg>
-            <span className="absolute top-0 right-0 h-4 w-4 bg-violet-600 text-white text-[10px] rounded-full flex items-center justify-center font-bold">2</span>
+            <span className="absolute top-0 right-0 h-4 w-4 bg-violet-600 text-white text-[10px] rounded-full flex items-center justify-center font-bold">0</span>
           </button>
           <a href="#login" id="nav-login-btn" className="text-sm font-medium text-gray-600 hover:text-violet-600 transition-colors">
             Login
@@ -52,7 +52,7 @@ export default function Navbar() {
           <a
             href="#get-started"
             id="nav-cta-btn"
-            className="px-5 py-2 bg-violet-600 text-white text-sm font-semibold rounded-full hover:bg-violet-700 active:scale-95 transition-all duration-200 shadow-md shadow-violet-200"
+            className="px-5 py-2 bg-violet-600 text-white text-sm font-semibold rounded-full hover:bg-violet-700 hover:shadow-lg hover:shadow-violet-200 active:scale-95 transition-all duration-200 shadow-md shadow-violet-200"
           >
             Get Started
           </a>
