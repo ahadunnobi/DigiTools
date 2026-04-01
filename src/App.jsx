@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Navbar from './components/Navbar';
@@ -7,13 +7,15 @@ import Stats from './components/Stats';
 import Products from './components/Products';
 
 function App() {
+  const [cart, setCart] = useState([]);
+
   return (
     <div className="min-h-screen bg-white font-sans">
-      <Navbar />
+      <Navbar cartCount={cart.length} />
       <main>
         <Hero />
         <Stats />
-        <Products />
+        <Products cart={cart} setCart={setCart} />
       </main>
       <ToastContainer />
     </div>

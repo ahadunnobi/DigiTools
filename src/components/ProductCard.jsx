@@ -6,7 +6,7 @@ const tagColors = {
   'new': 'bg-emerald-50 text-emerald-600',
 };
 
-const ProductCard = ({ product }) => {
+const ProductCard = ({ product, onAddToCart, isInCart }) => {
   return (
     <div className="bg-white rounded-[2rem] border border-gray-100 p-8 flex flex-col justify-between hover:shadow-2xl hover:shadow-violet-100 transition-all duration-500 group relative">
       {/* Tag Badge */}
@@ -62,8 +62,16 @@ const ProductCard = ({ product }) => {
       </ul>
 
       {/* Buy Now Button */}
-      <button className="w-full py-4 bg-[#7F56D9] text-white font-bold rounded-2xl hover:bg-violet-700 hover:shadow-xl hover:shadow-violet-200 active:scale-[0.97] transition-all text-base shadow-sm">
-        Buy Now
+      <button 
+        onClick={() => !isInCart && onAddToCart(product)}
+        disabled={isInCart}
+        className={`w-full py-4 font-bold rounded-2xl transition-all text-base shadow-sm ${
+          isInCart 
+          ? "bg-violet-100 text-violet-600 cursor-default" 
+          : "bg-[#7F56D9] text-white hover:bg-violet-700 hover:shadow-xl hover:shadow-violet-200 active:scale-[0.97]"
+        }`}
+      >
+        {isInCart ? 'Added to Cart' : 'Buy Now'}
       </button>
     </div>
   );
