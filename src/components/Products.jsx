@@ -49,7 +49,6 @@ const Products = ({ cart, setCart, activeTab, setActiveTab }) => {
   return (
     <section id="products" className="py-20 bg-gray-50/50">
       <div className="max-w-7xl mx-auto px-6">
-        {/* Section Header */}
         <div className="text-center mb-10">
           <h2 className="text-4xl md:text-5xl font-extrabold text-[#1D2939] mb-3">
             Premium Digital Tools
@@ -59,7 +58,6 @@ const Products = ({ cart, setCart, activeTab, setActiveTab }) => {
           </p>
         </div>
 
-        {/* Toggle Tabs */}
         <div className="flex justify-center mb-12">
           <div className="inline-flex items-center bg-[#F2F4F7] rounded-full p-1.5 border border-[#EAECF0]">
             <button
@@ -85,7 +83,6 @@ const Products = ({ cart, setCart, activeTab, setActiveTab }) => {
           </div>
         </div>
 
-        {/* Content */}
         {activeTab === 'products' ? (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {productsData.map((product) => (

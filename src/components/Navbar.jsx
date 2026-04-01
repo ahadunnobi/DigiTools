@@ -65,7 +65,6 @@ export default function Navbar({ cartCount = 0, setActiveTab }) {
           </a>
         </div>
 
-        {/* Mobile Hamburger */}
         <button
           id="nav-hamburger-btn"
           className="md:hidden p-2 text-gray-600 hover:text-violet-600"
@@ -80,7 +79,6 @@ export default function Navbar({ cartCount = 0, setActiveTab }) {
         </button>
       </div>
 
-      {/* Mobile Menu */}
       <div className={`md:hidden overflow-hidden transition-all duration-300 ${menuOpen ? 'max-h-96 border-t border-gray-100' : 'max-h-0'}`}>
         <div className="bg-white px-6 py-4 flex flex-col gap-4">
           {navLinks.map((link) => (

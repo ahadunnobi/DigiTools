@@ -66,26 +66,21 @@ const Stats = () => {
   }, []);
 
   return (
-    <section ref={sectionRef} className="bg-violet-600 w-full overflow-hidden relative shadow-[inset_0_2px_15px_rgba(0,0,0,0.1)] py-2 my-12 rounded-3xl max-w-[1280px] mx-auto">
-      {/* Dynamic background accents */}
+    <section ref={sectionRef} className="bg-violet-600 w-full overflow-hidden relative shadow-[inset_0_2px_15_rgba(0,0,0,0.1)] py-2 my-12 rounded-3xl max-w-[1280px] mx-auto">
       <div className="absolute top-0 left-1/4 w-[500px] h-full bg-violet-500/20 blur-[120px] rounded-full pointer-events-none animate-pulse" />
       <div className="absolute top-0 right-1/4 w-[500px] h-full bg-indigo-500/10 blur-[100px] rounded-full pointer-events-none" />
       
       <div className="max-w-7xl mx-auto px-6 relative z-10 flex flex-col md:flex-row items-center justify-center">
-        {/* Stat Item 1 */}
         <div className="flex-1 w-full relative">
           <StatItem endValue={50} label="Active Users" suffix="K+" trigger={isInView} />
-          {/* Vertical divider glow for desktop */}
           <div className="hidden md:block absolute right-0 top-1/4 bottom-1/4 w-[1px] bg-gradient-to-b from-transparent via-violet-300/40 to-transparent shadow-[0_0_12px_rgba(196,181,253,0.4)]" />
         </div>
 
-        {/* Stat Item 2 */}
         <div className="flex-1 w-full relative">
           <StatItem endValue={200} label="Premium Tools" suffix="+" trigger={isInView} />
           <div className="hidden md:block absolute right-0 top-1/4 bottom-1/4 w-[1px] bg-gradient-to-b from-transparent via-violet-300/40 to-transparent shadow-[0_0_12px_rgba(196,181,253,0.4)]" />
         </div>
 
-        {/* Stat Item 3 */}
         <div className="flex-1 w-full relative">
           <StatItem endValue={4.9} label="Rating" isDecimal={true} trigger={isInView} />
         </div>

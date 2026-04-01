@@ -7,7 +7,6 @@ const Footer = () => {
     <footer className="bg-[#0B101B] text-white pt-20 pb-10 px-6">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 mb-16">
-          {/* Logo & Description */}
           <div className="lg:col-span-4">
             <a href="#" className="inline-block mb-6">
               <span className="text-3xl font-black text-white tracking-tight">
@@ -20,7 +19,6 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* Product Links */}
           <div className="lg:col-span-2">
             <h4 className="text-sm font-bold uppercase tracking-wider text-gray-300 mb-6">Product</h4>
             <ul className="space-y-4">
@@ -31,7 +29,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Company Links */}
+
           <div className="lg:col-span-2">
             <h4 className="text-sm font-bold uppercase tracking-wider text-gray-300 mb-6">Company</h4>
             <ul className="space-y-4">
@@ -42,7 +40,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Resources Links */}
+
           <div className="lg:col-span-2">
             <h4 className="text-sm font-bold uppercase tracking-wider text-gray-300 mb-6">Resources</h4>
             <ul className="space-y-4">
@@ -53,7 +51,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Social Links */}
+
           <div className="lg:col-span-2">
             <h4 className="text-sm font-bold uppercase tracking-wider text-gray-300 mb-6">Social Links</h4>
             <div className="flex items-center gap-3">
@@ -70,10 +68,8 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Divider */}
         <div className="h-px bg-white/10 w-full mb-8" />
 
-        {/* Bottom Bar */}
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <p className="text-gray-500 text-sm font-medium">
             © {currentYear} DigiTools. All rights reserved.

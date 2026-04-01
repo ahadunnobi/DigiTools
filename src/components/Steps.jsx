@@ -34,25 +34,20 @@ const Steps = () => {
           </p>
         </div>
 
-        {/* Steps Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {stepsData.map((step) => (
             <div key={step.id} className="relative bg-white rounded-[2.5rem] border border-gray-100 p-10 flex flex-col items-center text-center hover:shadow-2xl hover:shadow-violet-100 transition-all duration-500 group">
-              {/* Step Number Badge */}
               <div className="absolute top-6 right-6 h-8 w-8 bg-[#7F56D9] text-white text-xs font-bold rounded-full flex items-center justify-center shadow-lg shadow-violet-200">
                 {step.id}
               </div>
 
-              {/* Icon Container */}
               <div className="mb-8 relative transition-transform duration-500 group-hover:scale-110">
                 <div className="h-24 w-24 rounded-full bg-violet-50 flex items-center justify-center">
                   {iconMap[step.id]}
                 </div>
-                {/* Decorative pulse effect */}
                 <div className="absolute inset-0 rounded-full bg-violet-200/20 animate-ping -z-10 group-hover:animate-none" />
               </div>
 
-              {/* Content */}
               <h3 className="text-2xl font-extrabold text-[#1D2939] mb-4">
                 {step.title}
               </h3>

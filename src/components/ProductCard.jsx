@@ -9,14 +9,12 @@ const tagColors = {
 const ProductCard = ({ product, onAddToCart, isInCart }) => {
   return (
     <div className="bg-white rounded-[2rem] border border-gray-100 p-8 flex flex-col justify-between hover:shadow-2xl hover:shadow-violet-100 transition-all duration-500 group relative">
-      {/* Tag Badge */}
       {product.tag && (
         <span className={`absolute top-6 right-6 text-[11px] font-bold px-4 py-1.5 rounded-full uppercase tracking-wider ${tagColors[product.tagType] || 'bg-gray-100 text-gray-700'}`}>
           {product.tag}
         </span>
       )}
 
-      {/* Icon */}
       <div className="mb-6">
         <div className="h-16 w-16 rounded-2xl bg-gray-50 flex items-center justify-center p-3.5 group-hover:bg-violet-50 transition-colors">
           <img 
@@ -27,7 +25,6 @@ const ProductCard = ({ product, onAddToCart, isInCart }) => {
         </div>
       </div>
 
-      {/* Name & Description */}
       <div className="mb-6">
         <h3 className="text-2xl font-bold text-[#1D2939] mb-2 group-hover:text-violet-600 transition-colors">
           {product.name}
@@ -37,7 +34,6 @@ const ProductCard = ({ product, onAddToCart, isInCart }) => {
         </p>
       </div>
 
-      {/* Price */}
       <div className="mb-6 flex items-baseline gap-1">
         <span className="text-3xl font-black text-[#1D2939] tracking-tight">
           ${product.price}
@@ -47,7 +43,6 @@ const ProductCard = ({ product, onAddToCart, isInCart }) => {
         </span>
       </div>
 
-      {/* Features */}
       <ul className="space-y-3.5 mb-8">
         {product.features.map((feature, i) => (
           <li key={i} className="flex items-center gap-3 text-sm text-[#475467] font-semibold">
@@ -61,7 +56,6 @@ const ProductCard = ({ product, onAddToCart, isInCart }) => {
         ))}
       </ul>
 
-      {/* Buy Now Button */}
       <button 
         onClick={(e) => {
           e.preventDefault();
