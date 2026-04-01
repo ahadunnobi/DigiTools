@@ -1,20 +1,26 @@
 import React from 'react'
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+import Features from './components/Features';
+import Products from './components/Products';
+import Testimonials from './components/Testimonials';
+import FAQ from './components/FAQ';
+import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="min-h-screen bg-base-200 flex items-center justify-center p-4">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold text-primary mb-4">DigiTools Platform Initiated</h1>
-        <p className="text-lg opacity-70">Ready for development.</p>
-        <button 
-          className="btn btn-primary mt-6"
-          onClick={() => alert("Project is ready!")}
-        >
-          Check Readiness
-        </button>
-      </div>
+    <div className="min-h-screen bg-white">
+      <Navbar />
+      <main>
+        <Hero />
+        <Features />
+        <Products />
+        <Testimonials />
+        <FAQ />
+      </main>
+      <Footer />
       <ToastContainer />
     </div>
   )
