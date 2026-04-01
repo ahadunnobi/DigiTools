@@ -2,7 +2,7 @@ import React from 'react';
 
 const CTA = () => {
   return (
-    <section id="cta" className="py-24 bg-white px-6">
+    <section id="cta" className="py-24 bg-[#d9dde0] px-6">
       <div className="max-w-7xl mx-auto">
         <div className="relative overflow-hidden rounded-[3rem] bg-gradient-to-br from-violet-600 via-violet-600 to-indigo-700 px-8 py-20 text-center shadow-2xl shadow-violet-200">
           {/* Decorative Elements */}

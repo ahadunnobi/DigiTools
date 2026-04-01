@@ -3,7 +3,7 @@ import banner from '../../assets/banner.png';
 
 const Hero = () => {
   return (
-    <section className="bg-white px-6 sm:px-12 lg:px-24 flex flex-col lg:flex-row items-center justify-between gap-12 max-w-[1280px] mx-auto min-h-screen pt-5">
+    <section className="bg-[#d9dde0] px-6 sm:px-12 lg:px-24 flex flex-col lg:flex-row items-center justify-between gap-12 max-w-[1280px] mx-auto min-h-screen pt-5">
       {/* Left Content */}
       <div className="flex-1 space-y-7 animate-fade-in lg:pr-10">
         {/* Badge */}

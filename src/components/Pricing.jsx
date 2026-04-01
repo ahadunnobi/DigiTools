@@ -4,8 +4,8 @@ import pricingData from '../data/pricing.json';
 
 const Pricing = () => {
   return (
-    <section id="pricing" className="min-h-screen py-24 bg-white flex flex-col justify-center">
-      <div className="max-w-7xl mx-auto px-6 w-full pt-20 pb-10">
+    <section id="pricing" className="py-16 bg-[#d9dde0]">
+      <div className="max-w-7xl mx-auto px-6 w-full pt-10 pb-5">
         {/* Header */}
         <div className="text-center mb-8">
           <h2 className="text-4xl md:text-5xl font-black text-[#101828] mb-3 tracking-tight">

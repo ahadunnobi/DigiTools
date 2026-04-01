@@ -22,7 +22,7 @@ const iconMap = {
 
 const Steps = () => {
   return (
-    <section id="steps" className="py-24 bg-white">
+    <section id="steps" className="py-24 bg-[#d9dde0]">
       <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-16">
