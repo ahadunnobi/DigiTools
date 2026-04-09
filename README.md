@@ -17,9 +17,7 @@ It focuses on clean visual design, smooth interactions, and a simple product dis
 
 ## Screenshot
 
-> Add a clean screenshot at `./public/assets/project-preview.png` and uncomment the markdown below.
-
-<!-- ![DigiTools Preview](./public/assets/project-preview.png) -->
+![DigiTools Preview](./public/assets/SS/Screens.png)
 
 ## Technology Stack
 
