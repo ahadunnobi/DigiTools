@@ -1,36 +1,96 @@
-# 🚀 DigiTools
+# DigiTools
 
 <div align="center">
-  <img src="./public/favicon.png" alt="DigiTools Logo" width="120" padding="20"/>
-  <br/>
-  <h3>The Ultimate Digital Tools Marketplace</h3>
+  <img src="./public/favicon.png" alt="DigiTools Logo" width="120" />
+  <h3>A modern digital tools marketplace UI built with React + Vite</h3>
 </div>
 
----
+## Project Overview
 
-## 📖 Description
+**DigiTools** is a responsive web marketplace interface for browsing premium digital products, adding items to a cart, and simulating checkout.  
+It focuses on clean visual design, smooth interactions, and a simple product discovery experience.
 
-**DigiTools** is a sleek, modern, and high-performance digital tools marketplace. It allows users to seamlessly discover, explore, and purchase top-tier software tools tailored for design, development, analytics, and productivity. Built with a premium aesthetic and smooth user experience in mind, DigiTools represents the next generation of SaaS marketplace platforms.
+## Live Project
 
----
+- **Live Site:** [https://digiven.netlify.app/](https://digiven.netlify.app/)
+- **Repository:** [https://github.com/ahadunnobi/DigiTools](https://github.com/ahadunnobi/DigiTools)
 
-## 💻 Technologies Used
+## Screenshot
 
-This project leverages modern web technologies to ensure a fast, responsive, and beautiful experience:
+> Add a clean screenshot at `./public/assets/project-preview.png` and uncomment the markdown below.
 
-*   **⚡ React.js** (via Vite) - For a blazing fast, component-based frontend architecture.
-*   **🎨 Tailwind CSS** - Utility-first CSS framework for rapid UI styling and complex responsive layouts.
-*   **🌼 DaisyUI** - Tailwind CSS component library used to accelerate development with pure CSS styling.
-*   **🔔 React-Toastify** - To provide elegant and informative real-time toast notifications.
+<!-- ![DigiTools Preview](./public/assets/project-preview.png) -->
 
----
+## Technology Stack
 
-## ✨ Top 3 Features
+- **Frontend Framework:** React 19
+- **Build Tool:** Vite 8
+- **Styling:** Tailwind CSS 4 + DaisyUI
+- **Notifications:** React-Toastify
+- **Language:** JavaScript (ES Modules)
 
-1.  **Stunning Premium UI/UX:** Features a state-of-the-art design with glassmorphism elements, dynamic color theming, and smooth micro-animations.
-2.  **Instant Cart & Wishlist Mechanisms:** Fully functional interactive product cards that allow users to add items to their cart or wishlist with real-time visual feedback.
-3.  **Fully Responsive Layout:** Expertly crafted to provide an optimal browsing experience across all devices—from large desktop monitors to compact mobile screens.
+## Core Features
 
-## 📤 submition Links:
-- GitHub Repository Link: https://github.com/ahadunnobi/DigiTools
-- Live Site Link: https://digiven.netlify.app/
+- Browse a curated list of premium digital products
+- Switch between `Products` and `Cart` views
+- Add items to cart with duplicate-item prevention
+- Remove individual items from the cart
+- Instant price total calculation and checkout simulation
+- Real-time toast notifications for key user actions
+- Fully responsive UI across desktop and mobile screens
+
+## Dependencies
+
+### Runtime Dependencies
+
+- `react`
+- `react-dom`
+- `react-toastify`
+
+### Development Dependencies
+
+- `vite`
+- `@vitejs/plugin-react`
+- `tailwindcss`
+- `@tailwindcss/vite`
+- `daisyui`
+- `postcss`
+- `autoprefixer`
+
+## Run Locally
+
+### 1) Clone the repository
+
+```bash
+git clone https://github.com/ahadunnobi/DigiTools.git
+cd DigiTools
+```
+
+### 2) Install dependencies
+
+```bash
+npm install
+```
+
+### 3) Start development server
+
+```bash
+npm run dev
+```
+
+### 4) Build for production
+
+```bash
+npm run build
+```
+
+### 5) Preview production build
+
+```bash
+npm run preview
+```
+
+## Additional Links
+
+- **Design file (`.fig`):** `DigiTools.fig`
+- **Design file (`.penpot`):** `DigiTools.penpot`
